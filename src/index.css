@@ -6,6 +6,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Great+Vibes&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:wght@300&display=swap');
 
 
+.alkaliMetal{
+  background: linear-gradient(135deg,#1b67c9, #164583)
+}
+.alkalineEarth{
+  background: linear-gradient(135deg,#f7698d, #883a4e)
+}
+.nonMetal{
+  background: linear-gradient(135deg,#00b6bc, #107f83)
+}
+.transltionMetal{
+  background: linear-gradient(135deg,#f53951, #7a111f)
+}
+.basicMetal{
+  background: linear-gradient(135deg,#f36d4a, #8f3019)
+}
+.semiMetal{
+  background: linear-gradient(135deg,#f5b659, #865813)
+}
+.halogen{
+  background: linear-gradient(135deg,#59cf6e, #128327)
+}
+.nobleGas{
+  background: linear-gradient(135deg,#329090, #105e5e)
+}
+.lanthanide{
+  background: linear-gradient(135deg,#ff00ff, #860086)
+}
+.actinide{
+  background: linear-gradient(135deg,#aa93aa, #614f61)
+}
+
 @layer base {
   .h1 {
     @apply text-[38px] tracking-[10%];
