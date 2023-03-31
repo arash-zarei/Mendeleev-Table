@@ -2,6 +2,7 @@ import React from "react";
 
 // Components
 import ElementTable from "./ElementTable";
+import Categores from "./Categores";
 
 // Elements Data
 import {
@@ -81,6 +82,18 @@ const BodyTable = () => {
             <ElementTable data={element} />
           ))}
         </div>
+      </div>
+      <div className="flex items-center gap-x-2 mt-6 mb-6">
+        <Categores category="فلز قلیایی" bgColor="alkaliMetal" />
+        <Categores category="قلیایی خاکی" bgColor="alkalineEarth" />
+        <Categores category="نا فلز" bgColor="nonMetal" />
+        <Categores category="فلز واسطه" bgColor="transltionMetal" />
+        <Categores category="فلز پایه" bgColor="basicMetal" />
+        <Categores category="نیمه فلز" bgColor="semiMetal" />
+        <Categores category="هالوژن" bgColor="halogen" />
+        <Categores category="گاز نجیب" bgColor="nobleGas" />
+        <Categores category="لانتانید ها" bgColor="lanthanide" />
+        <Categores category="آکتینید ها" bgColor="actinide" />
       </div>
     </div>
   );
