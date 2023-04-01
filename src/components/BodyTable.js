@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import ElementTable from "./ElementTable";
 import Categores from "./Categores";
+import NumGroup from "./NumGroup";
 
 // Elements Data
 import {
@@ -17,9 +18,18 @@ import {
   lanthanideSeries,
 } from "../assets/elementsTable";
 
+// Number Group Table
+
+import { numberGroup } from "../assets/numberGroup";
+
 const BodyTable = () => {
   return (
     <div className="mx-auto w-[1477px] border-blue-800 border-2 flex flex-col items-center">
+      <div className="flex">
+        {
+          numberGroup.map(data => <NumGroup number={data.num} text={data.text} />)
+        }
+      </div>
       <div>
         <div className="period1 flex items-center justify-between">
           {period_1.map((element) => (
