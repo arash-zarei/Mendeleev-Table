@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 
 // RactRouterDom
 import { Link } from "react-router-dom";
 
+// Context
+import { ShowPropertiesContext } from "../context/ElementPropertiesProvider";
+
 const ElementTable = ({ data }) => {
+
+  const { changed } = useContext(ShowPropertiesContext)
+
   const { symbol, name, atomicMass, atomicNum, category } = data;
   return (
-    <Link to={symbol}>
+    <Link onClick={symbol ? changed : null} to={symbol}>
       <div
         className={`w-20 h-24 flex flex-col cursor-pointer m-[1px] hover:border-black hover:border-[2px] ${category}`}
       >
