@@ -12,7 +12,7 @@ const Popup = () => {
 
   return (
     <div className={`w-full h-full absolute top-0 left-0 ${isShow ? "flex" : "hidden" } items-center justify-center bg-black/80`}>
-      <div className="container w-[80%] h-[90%] overflow-y-auto bg-[#1f2937] rounded-xl">
+      <div className="container w-[95%] md:w-[80%] h-[90%] overflow-y-auto bg-[#1f2937] rounded-xl">
         <div className="w-full flex justify-between items-center bg-[#1f2937] sticky top-0 p-4">
           <AiOutlineClose onClick={changed} color="#ff0000" cursor="pointer" fontSize="1.5rem" />
           <p className="text-yellow-600 font-primary font-bold text-lg">ویژگی های عنصر</p>

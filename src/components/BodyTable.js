@@ -24,7 +24,7 @@ import { numberGroup } from "../assets/numberGroup";
 
 const BodyTable = () => {
   return (
-    <div className="mx-auto w-[1477px] border-blue-800 border-2 flex flex-col items-center">
+    <div className="mx-auto w-[1477px] flex flex-col items-center">
       <div className="flex">
         {
           numberGroup.map(data => <NumGroup number={data.num} text={data.text} />)
