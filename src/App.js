@@ -7,6 +7,9 @@ import Popup from "./components/Popup";
 // Context
 import ElementPropertiesProvider from "./context/ElementPropertiesProvider";
 
+// ReactRouterDom
+import { Routes, Route } from "react-router-dom";
+
 const App = () => {
   return (
     <ElementPropertiesProvider>
@@ -15,7 +18,10 @@ const App = () => {
         <div className="container h-[80vh] mx-auto overflow-x-auto">
           <BodyTable />
         </div>
-        <Popup />
+        {/* <Popup /> */}
+        <Routes>
+          <Route path="/:slug" element={<Popup />} />
+        </Routes>
       </div>
     </ElementPropertiesProvider>
   );
