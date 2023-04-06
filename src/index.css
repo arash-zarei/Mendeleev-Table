@@ -37,6 +37,10 @@
   background: linear-gradient(135deg,#aa93aa, #614f61)
 }
 
+.rtl{
+  direction: rtl
+}
+
 @layer base {
   .h1 {
     @apply text-[38px] tracking-[10%];

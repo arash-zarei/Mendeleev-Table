@@ -77,6 +77,7 @@ const Popup = () => {
             <p className="text-[20px] font-primary">{category}</p>
           </div>
           <table className="w-full md:w-[50%] mb-2">
+            <tbody>
             {category && (
               <tr className="border-b-[1px] border-gray-400 flex justify-between md:justify-around">
                 <td className="text-[#7ec9fc] p-2 w-[50%] text-right">
@@ -175,12 +176,13 @@ const Popup = () => {
             )}
             {yeardiscovered && (
               <tr className="border-b-[1px] border-gray-400 flex justify-between md:justify-around">
-                <td className="text-[#7ec9fc] p-2 w-[50%] text-right">
+                <td className="text-[#7ec9fc] p-2 w-[50%] text-right rtl">
                   {yeardiscovered}
                 </td>
                 <th className="text-green-500 p-2 w-[50%] text-right">سال کشف</th>
               </tr>
             )}
+            </tbody>
           </table>
         </div>
       </div>
