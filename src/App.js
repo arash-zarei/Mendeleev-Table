@@ -18,7 +18,6 @@ const App = () => {
         <div className="container h-[80vh] mx-auto overflow-x-auto">
           <BodyTable />
         </div>
-        {/* <Popup /> */}
         <Routes>
           <Route path="/:slug" element={<Popup />} />
         </Routes>
