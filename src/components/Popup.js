@@ -55,7 +55,7 @@ const Popup = () => {
         isShow ? "flex" : "hidden"
       } items-center justify-center bg-black/80`}
     >
-      <div className="container w-[95%] md:w-[80%] h-fit overflow-y-auto bg-[#1f2937] rounded-xl">
+      <div className="container w-[95%] md:w-[80%] h-[90vh] overflow-y-auto bg-[#1f2937] rounded-xl">
         <div className="w-full flex justify-between items-center bg-[#1f2937] sticky top-0 p-4">
           <AiOutlineClose
             onClick={changed}
